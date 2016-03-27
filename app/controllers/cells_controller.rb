@@ -1,4 +1,4 @@
-require '../app/models/cell'
+require '../models/cell'
 
 class CellsController
   attr_accessor :cells, :torus_surface, :live_cells_number, :neighbors_number
