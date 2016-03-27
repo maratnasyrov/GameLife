@@ -27,6 +27,17 @@ class CellsController
   end
 
   def configuration(object)
+    object.clear
+
+    cells.each_index do |i|
+      cells[i].each_index do |j|
+        cell = cells[i][j]
+        if cell == 1
+          object.push(i,j)
+        end
+      end
+    end
+    return object
   end
 
   def live_neighbors(i,j)
