@@ -1,5 +1,5 @@
-require '..app/spec/spec_helper'
-require '..app/controller/cells_controller'
+require '../spec/spec_helper'
+require '../app/controllers/cells_controller'
 
 describe CellsController do
   let(:array) { [[1, 1, 0], [0, 0, 0], [0, 0, 0]] }

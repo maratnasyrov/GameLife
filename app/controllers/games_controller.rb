@@ -1,5 +1,5 @@
-require '..app/controller/cells_controller'
-require '..app/view/game_view'
+require '../controllers/cells_controller'
+require '../views/game_view'
 
 class GameController
   def initialize
