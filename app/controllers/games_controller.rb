@@ -48,7 +48,7 @@ class GameController
     current_configuration = Array.new
     last_configuration = Array.new
 
-    while live_cells > 0 && do
+    while live_cells > 0 && !cells_replay.include?(cells.configuration(current_configuration)) do
       sleep 2
       system('clear')
 
